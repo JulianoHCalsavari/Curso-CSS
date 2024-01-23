@@ -1,0 +1,36 @@
+<!--CSS significa Cascading Style Sheets, ou melhor, Folha de Estilo em Cascata-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo CSS</title>
+
+    <!--Para usarmos o CSS interno colocamos a tag <style></style> e dentro dela iremos inserir qual é o seletor (as tags/os elementos) que queremos mudar e dentro de cada seletor (body{}, h1{}) inserimos as propriedades/valores que desejamos, como font-size: ; ou color: ; ...-->
+    <!--Mesmo esse 'tipo' de CSS sendo mais prático que o CSS in line ele ainda não é muito prático em larga escala, pois ele só serve para uma página HTML, então se fossemos criar duas nós teríamos que realizar o processo duas vezes, se tornando uma perda de tempo e tempo é dinheiro, para resolver esse problema usamos um arquivo CSS externo para inserirmos características iguais para várias páginas-->
+    <style>
+        h2{
+            background-color: blueviolet;
+            font-size: 50px;
+        }
+    </style>
+
+</head>
+
+<!--A propriedade style="" é usada para mudar as características de uma parte do site, no caso tudo que está dentro da tag body, dentro dele colocamos o que iremos alterar e para o que, caso coloquemos mais de uma alteração devemos separá-las por ";"-->
+<!--Essa forma não é muito prática pois ela só servirá para uma coisa, uma só tag, por isso normmalmente usamos o CSS interno/incorporado-->
+<body style="background-color: yellow;">
+    <h1 style="color: aqua; font-size: 80px;">Meu "primeiro" site com CSS</h1>
+    <h2>Outro componente</h2>
+    <h2>Outro h2</h2>
+
+    <!--Podemos definir uma característica especial para algum elemento específico através do CSS in line, pois ele está na frente do CSS interno em ordem de prioridade-->
+    <h2 style="color: blue; background-color: red;">h2 mudado pelo CSS in line</h2>
+    <h1>Outro h1</h1>
+
+
+
+    <a href="outra.html">Vá para outra página</a>
+</body>
+
+</html>

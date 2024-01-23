@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuando o curso de CSS</title>
+    <!--Para adicionarmos as alterações/estilos CSS (do CSS externo) em uma página usamos a tag <link rel="stylesheet" href="CSS/____.css">, assim fazemos a conexão entre as duas partes (html e CSS), normalmente é até melhor colocar essa tag antes do title-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        .classe h1 {
+            color: rgb(247, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <!--Essa ordem de prioridade é um outro motivo para o estilo em cascata, pois temos variações de prioridde, isso abre um leque de possibilidades, mas normalmente não é muito bom usarmos os tipos de CSS misturados-->
+    <!--CRTL+; => Tranfos ma a tag em comentário ou remove caso já esteja como um-->
+    <h1>Ordem de prioridade:</h1>
+    <h1 style="color: brown;">CSS in-line</h1>
+
+    <div class="classe"><h1>CSS interno</h1></div>
+
+    <h1>CSS EXTERNO</h1>
+    
+    <a href="outra.html">Ir para outra página</a>
+    <br><br>
+    <h2>SELETORES</h2>
+
+    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <p class="center vermelho">Fugiat aliquid animi libero tenetur, tempore iusto at.</p>
+
+    <p class="font20 center">Sit, dolorum eius praesentium facere ratione repellendus autem doloremque.</p>
+
+    <p id="teste">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto itaque, quibusdam eaque iste corporis magni dolorum doloremque ex.</p>
+
+    <h2>At libero, nisi, nihil nemo ea expedita, quod asperiores recusandae provident sit amet minima? Dolores.</h2>
+
+    <h3>Obcaecati eum nisi totam maxime placeat facilis, illum ab quisquam recusandae vitae modi, autem ut.</h3>
+    
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+/*Nessa aula veremos a propriedade display (menos a flex, pois veremos ela sozinhaa mais para a frente).
+A propriedade display é uma das mais importantes do CSS para controlar nosso layout, ela especifica se ou como um elemento será exibido, cada elemento html do código já tem um valor de exibição/display por padrão de acordo com o elemento que ele é, o tipo de comportamento que ele vai ter*/
+
+/*Vamos analisar os tipos de displays:
+display:block => transforma em um bloco, ou seja, ele vai ocupar todo o espaço da linha indo de uma lado a outro, por isso os h1, por exemplo, não ficam um do lado do outro, ficam sempre em baixo, conhecido como bloco.
+display:inline => O elemento não inicia em uma nova linha, nem ocupa toda a extensão da página, mas simplesmente ele ocupa a extensão na mesma linha de acordo com a largura que você precisar, ocupa só o necessário.
+display:block => 
+display:block => 
+display:block => 
+*/
+
+/*Agora analisaremos qual tag vem com qual tipo de display por PADRÃO:
+display:block (tags)=> div, h1, p, form, header, footer e section.
+display:inline (tags)=> a, span e img.
+display:block => 
+display:block => 
+display:block => 
+*/
+
+/*Agora colocaremos diferentes formas de destacar o display de cada uma para ficar mais fácil de entendermos*/
+
+.block{
+    background: rgb(153, 98, 207);
+    color: azure;
+}
+
+.inline{
+    background: greenyellow;
+}
+
+.none{
+    
+}
+
+.inlineblock{
+
+}
+
+
+/*Agora aprenderemos como usá-las:*/
+
+usinline{
+    display: inline;
+}

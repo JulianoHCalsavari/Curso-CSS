@@ -1,0 +1,122 @@
+/*Existem várias propriedades relacionadas aos textos, e hoje aprenderemos uma grande parte delas*/
+
+/*Primeiro aprederemos a text-align:___, com suas variações:
+**center => Alinha o texto ao centro;
+end => Alinha o texto semelhante ao right;
+justify => Deixa o texto justificado, retangular certinho, alinhadinho;
+**left => Alinha o texto à esquerda;
+**right => Alinha o texto à direita;
+start => Alinha o texto semelhante ao left;
+inherit => Alinha o texto segundo as propriedades do elemento pai;
+initial => Alinha o texto de acordo com o padrão de dele (default);
+unset => Aparentemente alinha o texto da forma padrão dele (default) ou segue o da tag pai;
+** => mais usados
+*/
+
+*{
+    font-size: 25px;
+}
+
+.tac{
+    text-align: center;
+    color: salmon;
+}
+
+.tae{
+    text-align: end;
+    color: purple;
+}
+
+.taj{
+    text-align: justify;
+    color: peru;
+}
+
+.tal{
+    text-align: left;
+    color: gray;
+}
+
+.tar{
+    text-align: right;
+    color: darkcyan;
+}
+
+.tas{
+    text-align: start;
+    color: darkblue;
+}
+
+.tainh{
+    text-align: inherit;
+    color: darkred;
+}
+
+.taini{
+    text-align: initial;
+    color: darkorchid;
+}
+
+.tau{
+    text-align: unset;
+    color: darkgoldenrod;
+}
+
+
+/*Outra propriedade é a direction:____, que interfere na direção do texto, de qual lado para o outro é escrito, ela pode ser rtl (right to left, direita para a esquerda) ou ltr (left to right, esquerda para a direita)*/
+
+.rtl{
+    direction: rtl;
+    color: cadetblue;
+}
+
+.ltr{
+    direction: ltr;
+    color: palevioletred;
+}
+
+/*Outra ainda é a unicode-bidi:____ que ao usarmos bidi-override ela escreve tudo ao contrário (de traz para frente), bom para outros idiomas (escritos ao contrário), tem uma tag em html que já  faz isso, mas enfim*/
+/*A propriedade unicode-bidi: bidi-override deve sempre ser acopanhada de uma direction: rtl, não me pergunte o porquê kkkkkkkk*/
+
+.uni{
+    color: darkorchid;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+
+/*NÃO FOI PASSADO NA AULA 3 !!!*/
+
+
+/*Temos também a text-decoration:____, usada principalmente com links: 
+Com o none, por exemplo, podemos tirar o sublinhado que vem com os links;
+Com overline inserimos uma espécie de sublinhado em cima, ao invés de ser em baixo;
+Com o line-through ele deixa o texto riscado no meio;
+Por fim, com o underline simplesmente sublinhamos o texto.
+*/
+
+
+
+/*Outra propriedade muito usada é o text-transform:____, usamos ele para muitos recursos:
+Com o uppercase podemos deixar o texto todo maiúsculo;
+Com o lowercase deixamos todas as letras minúsculas;
+E com o capitalize podemos deixar apenas as primeiras letras dos textos em maiúsculo.
+Podemos usar essas propriedaes para um título que queremos que seja todo em maiúsculo ou em textos normais onde queremos que apenas  primeira letra seja maiúscula
+*/
+
+
+
+/*Mais uma também comumente usada é a text-indent:____, ela serve para recuar a primeira o tanto especificado, dar o efeito de parágrafo*/
+
+
+
+/*Outra é a letter-spacing:____, com ela podemos definir o espaço desejado entre as letras, podendo tanto ser positivo, quanto negativo (Com as letras bem grudadinhas)*/
+
+
+
+/*Ainda outra é a line-height:____, nele definimos o espaçamento/a altura das linhas normalmente usamos ele em decimais, mas também podemos usá-lo em números normais (só não faz sentido)*/
+
+
+
+/*Por fim, temos o word-spacing:____, que define o espaço entre uma palavra e outra*/
+

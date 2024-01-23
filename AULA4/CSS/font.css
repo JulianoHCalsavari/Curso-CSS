@@ -1,0 +1,17 @@
+/*As fontes são muito importantes para o nosso site, pois elas vão deixar nosso site mais bonito, mais formal ou informal, elas dizem muito sobre ele, elas fazem muita diferença no layout final*/
+/*A primeira propriedade é font-family:___, que diz repeito a família da fonte, nela escolhemos os tipos de fontes que queremos usar, por padrão, o VSCode já nos mostra as mais padrões, que quase todos os navegadores tem, caso não coloquemos isso a fonte será a times new roman*/
+
+
+
+/*Outra propriedade é a font-size:___, com ela definimos o tamanho da letra de acordo com a fonte*/
+
+
+/*Para colocarmos uma fonte externa no nosso site, normalmente, usamos o Google Fonts, é só escolhermos a fonte lá, selecionarmos @import e pegarmos o que tem lá, por fim colocamos isso lá em cima da folha CSS, para usarmos ela é só colocarmos o que aparece na segunda parte do @import, dessa forma podemos tanto importar e usar uma só ou mais fontes*/
+
+
+
+/*Outra propriedade é o font-style:____, podemos usá-lo como italic para deixarmos em itálico, como oblique para deixar o texto um pouco caidinho (um semi-itálico), como normal para mantermos o texto normal (kkkkkkk)*/
+
+
+
+/*Mais uma propriedade é a font-weight:____, com ela definimos a grossura da fonte, inclusive podemos defini-la como bold, para deixar em negrito (dessa forma não precisamos colocar o bold no HTML), também podemos definir por valores entre 100 e 900 (mudando de 100 em 100)*/

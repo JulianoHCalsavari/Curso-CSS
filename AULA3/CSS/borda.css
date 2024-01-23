@@ -1,0 +1,85 @@
+
+/*Para usarmos a propriedade border:_____, primeiro devemos inserir a espessura da borda, depois damos um espaço e inserimos o tipo da borda, existem vários (serão futuramente apresentados), depois mais um espaço e inserimos a cor da borda*/
+/* Tipos/Variações de bordas:
+    **solid => linhas completas sem falhas
+    **dotted => vários pointinhos que formam as linhas
+    **dashed => Vários tracinhos que formam as linhas
+    ##double => duas bordas (sólidas)
+    ##groove => efeito 3D (com preto não funciona)
+    ##ridge => efeito 3D com sombras nos locais contrários da groove
+    ##inset => Coloca sombra na parte de cima e da esquerda
+    ##outset => Coloca sombra na parte de baixo e da direita
+    none => Nenhuma, sem borda
+    hidden => Oculta, a borda não aparece
+    ** => Mais trabalhadas
+    ## => Precisa ser mais grossas, terem mais px para darem certo, caso contrário não cumprem exatamente suas funções
+*/
+h1{
+    border: 3px solid black;
+}
+
+#b1{
+    border: 3px dotted rgb(255, 0, 0);
+}
+
+#b2{
+    border: 3px dashed blue;
+}
+
+#b3{
+    border: 7px double green;
+}
+
+#b4{
+    border: 10px groove yellow;
+}
+
+#b5{
+    border: 7px ridge gray;
+}
+
+#b6{
+    border: 7px inset pink;
+}
+
+#b7{
+    border: 7px outset peru;
+}
+
+#bl{
+    border-left: 8px solid ;
+}
+
+#br{
+    border-right: 8px solid purple;
+}
+
+#bt{
+    border-top: 8px solid paleturquoise;
+}
+
+#bb{
+    border-bottom: 8px solid mediumaquamarine;
+}
+
+/*Dessa forma podemos trabalhar com cada borda individualmente,  de forma isolada para criar o efeito que desejamos*/
+#ball{
+    border-left: 6px dotted rebeccapurple;
+    border-bottom: 5px dashed hotpink;
+    border-right: 7px solid salmon;
+    border-top: 8px double seagreen;
+}
+
+/*Também temos o famoso e muito usado border-radius usado para arredondar as bordas, podemos defini-lo em % ou em medidas (como px)*/
+#brad{
+    border: 12px solid blueviolet;
+    border-radius: 9px;
+}
+
+/*Podemos unir a propriedade background-color com a propriedade border-radius para efeitos diferentes*/
+#bmix{
+    border: 9px dashed blue;
+    border-radius: 20px;
+    line-height: 18px;
+    background-color: blue;
+}

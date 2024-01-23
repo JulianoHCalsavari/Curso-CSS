@@ -1,0 +1,35 @@
+/*Margem serve para dar um espaçamento em relação à um dos lados (cima, baixo, direita, esquerda) de um elemento ela é comumente usada para alinhamentos, pode ser colocada com % ou em medidas (com px)*/
+
+h1{
+    margin: 50px;
+}
+
+/*Podemos usá-la desse jeito, apenas margin, e colocar só um valor, sendo assim esse valor valerá para todos os lados, ou podemos usá-lo com quatro valores sendo cada um para uma direção, 1° top, 2° right, 3° bottom, 4° left*/
+#m{
+    margin: 60px;
+
+}
+
+#mmix{
+    margin: 10px 40px 50px 80px
+}
+
+#ml{
+    margin-left: 100px;
+
+}
+
+#mr{
+    margin-right: 150px;
+
+}
+
+#mt{
+    margin-top: 90px;
+
+}
+
+#mb{
+    margin-bottom: 70px;
+
+}

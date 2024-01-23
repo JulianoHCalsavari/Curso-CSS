@@ -1,0 +1,16 @@
+/*As propriedades Width e Height são bem simples e já foram até vistas por nós em html com as imagens, ma snós podemos definí-las para quase todos os elementos*/
+
+/*Temos as propriedades padrões, width e height comuns que definem respectivamente a largura e a altura de uma determinada coisa, mas também temos outras propriedades "variantes" dessas*/
+.teste{
+    width: 300px;
+    height: 150px;
+    background-color: greenyellow;
+}
+
+/* Por exemplo, temos as propriedades max-width:___ e max-height:___, que definem respectivamente uma largura e uma altura máxima para algum elemento, eles são comumente utilizados para configurações para os dispositivos móveis, fazer os famosos elementos responsivos, mais para frente veremos mais sobre eles */
+
+.teste2{
+    max-width: 100px;
+    max-height: 100px;
+    background-color: aqua;
+}

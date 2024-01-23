@@ -1,0 +1,83 @@
+/*Agora veremos a estilização de links, que abrirá um grande leque de possibilidades para as edições de links*/
+/*Primeiramente, quando vamos trabalhar com links é interesssante usarmos duas formas de seleção em conjunto a por tag (a) e a por class (da suas escolha), assim criamos uma seleção mais certeira (específica)*/
+
+/*O botão mais clássico e também mais simples, porém com hover, é feito assim:*/
+a.button1{
+    background: wheat;
+    color: green;
+    padding: 8px;
+    text-decoration: none;
+    border: 4px solid violet;
+    border-radius: 18px;
+}
+a.button1:hover{
+    background-color: gold;
+    border: 4px solid darkgreen;
+    box-shadow: 5px 5px blue;
+}
+
+/*Um botão um pouco mais sofisticado (vazado) é assim:*/
+a.button2{
+    text-decoration: none;
+    padding: 14px;
+    border: 6px dashed purple;
+    color: crimson;
+    border-radius: 24px;
+}
+a.button2:hover{
+    background-color: aqua;
+    text-decoration: underline;
+    color: darkblue;
+    padding: 8px;
+}
+
+/*Um botão mais para menu é assim:*/
+a.button3{
+    color: hotpink;
+    text-decoration: none;
+}
+a.button3:hover{
+    color: blueviolet;
+    border-bottom: 3px solid blue;
+}
+
+/*Um botão com as fontes mais estilizadas pode ser assim:*/
+a.button4{
+    border-bottom: 6px dashed brown;
+    color: deeppink;
+    font-size: 32px;
+}
+a.button4:hover{
+    font-size: 72px;
+    font-weight: bold;
+}
+
+/*Por fim, um botão com o cursor diferente*/
+/* Daí vem mais uma propriedade de CSS, que é a cursor:___, ela possui muitas váriações, por isso não trabalharemos com ela individualmente,mas assim que digitado o nome da propriedade aparecem as variações e podemos testar na hora para descobrirmos o que cada uma faz, mas entre elas a none deixa sem cursor, a text deixa o cursor como o de texto, o wait deixa com a bolinha de carregando, com o help aparece um pontinho de interrogação */
+a.button5{
+    cursor: wait;
+}
+
+.c{
+    margin-top: 100px;
+    text-align: center;
+}
+
+a.button6{
+    background-color: lightblue;
+    padding: 14px;
+    border: 5px dotted rgb(76, 76, 189);
+    color: rgb(2, 2, 139);
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+a.button6:hover{
+    box-shadow: 5px 5px rgb(184, 177, 177);
+    background: blueviolet;
+    color: aquamarine;
+    cursor: all-scroll;
+}

@@ -1,0 +1,60 @@
+/*A vantagem principal de usar o CSS externo é que podemos usar uma mesma edição para diversas páginas diferentes do site, além disso o CSS exeterno é normalmente a forma mais comumumente usada, mais "profissional/correta", também é muito mais produtiva, pois todas as alterações ficam em um lugar só facilitando correções e alterações*/
+/*Normalmente criamos uma pasta chamada CSS para armazenar todos os arquivos .css, assim deixamos maisorganizado*/
+
+/*Chamamos o CSS de folha de estilo em cascata, porque podemos usar várias ao mesmo tempo, podemos por exemplo colocar uma folha com as configurações apenas do header e outra com um configuração específica do body, outra para tamanho de fontes, isso é interessante para coisas que serão iguais a todas as páginas e coisas que serão diferentes ao mesmo tempo*/
+/*Normalmente temos um geralzão chamado style ou main e outros mais específicos*/
+
+/*Esse não é considerado muito bem um seletor, pois ele seleciona tudo da página, não tem nenhum critério, é chamado de coringa ou universal*/
+*{
+    padding: 20px;
+}
+
+/*Primeiro tipo de seletores:
+Selecionam de acordo com a tag
+Não usamos nada na frente*/
+body {
+    background-color: aquamarine;
+}
+
+h1 {
+    color: rgb(0, 136, 255);
+}
+
+h2{
+    background-color: aliceblue;
+    font-size: 50px;
+}
+
+/*Segundo tipo de seletores:
+Selecionam de acordo com as classes, especificadas no html, podemos colocar mais de uma classe para uma mesma tag, não tem limite máximo, basta dar um espaço entre elas, class="center vermelho", a class nunca pode ser começada com números.
+Usamos . para identificar uma classe*/
+.center{
+    text-align: center;
+}
+
+.vermelho{
+    color: red;
+}
+
+.font20{
+    font-size: 20px;
+}
+
+/*Terceiro tipo de seletores:
+Selecionam de acordo com o id,também especificados no html, normalmente são usados para coisas mais específicas (identficador), o id nunca pode ser começado com números, além disso os identificadores são únicos, para coisas gerais usamos classes.
+Usamos # para selecionar um id*/
+#teste{
+    color:blue;
+    background-color: yellow;
+}
+
+/*Podemos agrupar seletores para pouparmos linhas de código, usamos isso quando temos dois seletores que são iguais, então podemos agrupá-los em um só usando uma vírgula entre eles*/
+/*Aqui no h2 também podemos notar um grau de prioridade, o está mais para o fim tem uma prioridade maior*/
+h2, h3{
+    color: blueviolet;
+    background-color: orange;
+    text-align: center;
+    font-size: calc(18px - 1px);
+}
+
+/*Existe outros seletores mais complexos, mais esses não são muito usados, porém mais para frente veremos alguns deles*/

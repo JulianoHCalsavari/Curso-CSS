@@ -1,0 +1,73 @@
+/*O padding é semelhante ao margin, porém o padding dá um espaçamento interno (faz uma espécie de preenchimento interno) enquanto o margin dá um externo, isso ficará mais fácil de entender com o auxílio da border, o padding também pode ser usado para todas as direções (tanto de forma separada, quanto em uma só)*/
+/*padding é bastante utilizado para fazer botões, usa-se ele combinado com o background-color*/
+
+h1{
+    background-color: yellow;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0px 40px 20px 40px;
+}
+
+.mbor{
+    margin-top: 60px;
+    background-color: blue;
+    color: aliceblue;
+}
+
+.pbor{
+    padding-top: 60px;
+    background-color: rgb(255, 0, 0);
+}
+
+.p{
+    padding: 30px;
+    background-color: rgb(255, 103, 230);
+    color: purple;
+}
+
+.pmix{
+    padding: 10px 30px 50px 70px;
+    background-color: rgb(0, 225, 255);
+    color: rosybrown;
+}
+
+.ptop{
+    padding-top: 30px;
+    background-color: rgb(253, 194, 0);
+    color: rgb(255, 0, 0);
+}
+
+.pr{
+    padding-right: 30px;
+    background-color: rgb(0, 255, 13);
+    color: rgb(119, 93, 190);
+}
+
+.pb{
+    padding-bottom: 30px;
+    background-color: rgb(245, 183, 183);
+    color: rgb(0, 255, 242);
+}
+
+.pl{
+    padding-left: 30px;
+    background-color: rgb(206, 255, 73);
+    color: rgb(216, 97, 231);
+}
+
+/*Somando grande parte do que aprendemos hoje podemos criar um button, bem legalzinho, mais para frente veremos também a estilização quando o mouse passar por cima dele (vamos só dar uma olhadinha agora kkkkk)*/
+.buttonfake{
+    margin-left: 35%;
+    background: greenyellow;
+    color: whitesmoke;
+    padding: 15px;
+    border-radius: 18px;
+    /*Podemos usar uma propriedade que ainda não vimos para retirar o sublinhado de um link e deixar o button mais bonito*/
+    text-decoration: none;
+}
+
+/*Para estilizarmos quando o mouse passar por cima do button (ou do que desejarmos), basta colocarmos a classe ou o id dele com :hover depois, assim poderemos configurar o que mudará quando o mouse estiver em cima dele*/
+.buttonfake:hover{
+    background-color: red;
+}
