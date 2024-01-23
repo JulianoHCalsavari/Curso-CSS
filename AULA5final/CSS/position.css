@@ -1,0 +1,77 @@
+/*Agora aprenderemos a propriedade position (ou posicionamento), ela diz respeito a como o elemento irá se comportar no fluxo da página*/
+
+/*Existem praticamente cinco tipos de variações de position, são elas:
+
+Static (Estático) => Posicionamento parado (normal), onde ele está é onde ele vai ficar conforme o fluxo normal.
+
+Relative (Relativo) => É o posicionamento do elemento relativo a onde ele está presente, permite a você passar alguns parâmetros (left, right, top, bottom) de acordo com a posição do objeto, pode até ficar por cima de outro elemento, assim podemos usar a propriedade z-index para escolher quem vai ficar na frente.
+
+Fixed (Fixo) => Deixa um elemento fixo na tela, independentemente da rolagem que você fizer ele sempre vai ficar no mesmo lugar, usado naquelas coisinhas que ficam do lado da tela, como o logo do whatsapp ou a opção de acessibilidade. 
+
+Absolute (Absoluto) => Diz respeito a qual vai ser a posição do elemento em relação ao elemento pai dele (a tag onde ele está contido), porém para podermos conseguir isso, o elemento pai precisa ser qualquer position, menos a static, pois caso contrário ele seguirá as tags mais externas, até o body (pai => pai do pai => ... => body).
+
+Sticky (Pegajoso/grudento) => Nela podemos, e devemos, passar parâmetros para quando passarmos com o barra de rolagem o elemento grudar na posição que desejamos, esse deslocamento só vai ocorrer dentro da tag pai, então ela irá parar quando chegar no limite da tag pai.
+*/
+
+.container{
+    position: relative;
+    display: inline-block;
+    background: blue;
+    width: 100%;
+    height: 400px;
+}
+
+/*Uma dúvida que pode acabar surgindo é como escolher o que vai na frente, ou seja, o que vai estar na frente do outro, para isso podemos usar mais uma propriedade que é a z-index: , ela vai desde números negativos até 999, ela vai definir a posição do elemento em relação ao eixo z*/
+
+.static{
+    position: static;
+    background: greenyellow;
+    height: 100px;
+    display: inline-block;
+    width: 20%;
+}
+
+.relative{
+    position: relative;
+    background: goldenrod;
+    height: 100px;
+    display: inline-block;
+    z-index: 2;
+    /*Vale lembrar que o número colocado ao passar o parâmetro, significa a distâcia que ele ficará daquele lado, se você colocar 20px, ele afastará 20px do lado selecionado*/
+    left: 40px;
+    width: 20%;
+}
+
+.fixed{
+    text-align: center;
+    position: fixed;
+    color: aliceblue;
+    background: green;
+    height: 100px;
+    width: 10%;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* Também segue os parâmetros à partir do inicial */
+.absolute{
+    position: absolute;
+    background: orangered;
+    height: 100px;
+    display: inline-block;
+    width: 20%;
+    left: 0;
+    bottom: 0;
+}
+
+.sticky{
+    position: sticky;
+    top:0;
+    background: wheat;
+    height: 100px;
+    width: 20%;
+}
+
+/*
+##### OS EXEMPLOS MAIS PRÁTICOS EU MOSTRAREI NA PRÓXIMA AULA #####
+*/

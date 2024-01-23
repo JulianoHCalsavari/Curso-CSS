@@ -23,6 +23,12 @@
 
     <section class="block">BLOCK por padrão section</section>
 
+    <ul class="block border">
+        <li class="block border">BLOCK por padrão li</li>
+        <li class="block border">BLOCK por padrão li</li>
+        <li class="block border">BLOCK por padrão li</li>
+    </ul>
+
     <br><hr><br>
 
     <a href="" class="inline">INLINE por padrão a</a>
@@ -41,12 +47,54 @@
 
     <h1>Usando as propriedades em exemplos:</h1>
 
-    <h1>Texto com BLOCK (padrão)</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit pariatur veniam unde reiciendis sed fuga saepe voluptatem voluptas voluptatum quos repellat, blanditiis debitis voluptatibus non maxime explicabo, quas provident numquam!</p>
+    <h1 class="border">Texto com BLOCK (padrão)</h1>
+    <p class="border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit pariatur veniam unde reiciendis sed fuga saepe voluptatem voluptas voluptatum quos repellat, blanditiis debitis voluptatibus non maxime explicabo, quas provident numquam!</p>
 
     <br><hr><br>
 
-    <h1 class="usinline">Texto com INLINE</h1>
-    <p  class="usinline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit pariatur veniam unde reiciendis sed fuga saepe voluptatem voluptas voluptatum quos repellat, blanditiis debitis voluptatibus non maxime explicabo, quas provident numquam!</p>
+    <h1 class="usinline border">Texto com INLINE</h1>
+    <p  class="usinline border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit pariatur veniam unde reiciendis sed fuga saepe voluptatem voluptas voluptatum quos repellat, blanditiis debitis voluptatibus non maxime explicabo, quas provident numquam!</p>
+
+    <br><hr><br>
+
+    <h1 class="usnone border">Texto com NONE no hover</h1>
+    <p  class="usnone border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit pariatur veniam unde reiciendis sed fuga saepe voluptatem voluptas voluptatum quos repellat, blanditiis debitis voluptatibus non maxime explicabo, quas provident numquam!</p>
+
+    <br><hr><br>
+
+    <h1 class="visib">Texto com visibility no hover</h1>
+    <p  class="visib border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit pariatur veniam unde reiciendis sed fuga saepe voluptatem voluptas voluptatum quos repellat, blanditiis debitis voluptatibus non maxime explicabo, quas provident numquam!</p>
+
+    <br><hr><br>
+
+    <h1 class="inlineblock">Texto com INLINE-BLOCK</h1>
+    <p  class="inlineblock">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit pariatur veniam unde reiciendis sed fuga saepe voluptatem voluptas voluptatum quos repellat, blanditiis debitis voluptatibus non maxime explicabo, quas provident numquam!</p>
+
+    <br><hr><br>
+
+    <ul>
+        <!-- Quando transformamos um elemento que tinha o display block em um display inline ele é considerado uma "palavra" por isso fica com esse espaçamentos entre os itens mesmo sem darmos eles, seria como se a linha que pulamos entre um e outro fosse o espaçoque damos entre uma palavra e outra ao escrevermos, se tirarmos os espaços entre as palavras ou não pularmos linha entre os itens é entendido que é uma "palavra"só -->
+        <li class=" liinline border">COMO</li>
+        <li class=" liinline back1">FUNCIONAM</li>
+        <li class=" liinline back2">AS PROPRIEDADES</li>
+
+        <li class=" liinline back1">COMO</li><li class=" liinline back2">FUNCIONAM</li><li class=" liinline back1">AS PROPRIEDADES</li>
+    </ul>
+
+    <br><hr><br><h4>Mas e se quisermos mudar as alturas dos itens e ao mesmo tempo quisermos que eles fique um do lado do outro ?</h4><br>
+
+    <ul>
+        <li class="size2 border liinlblock">Para isso</li>
+        <li class="size2 back2 liinlblock">temos o display</li>
+        <li class="size2 back1 liinlblock">inline-block</li>
+    </ul>
+
+    <h3>EXEMPLO MAIS PRÁTICO:</h3>
+
+    <ul>
+        <li class="size back3 liinlblock">VERDE</li>
+        <li class="size back2 liinlblock">CORAL</li>
+        <li class="size back1 liinlblock">AQUA</li>
+    </ul>
 </body>
 </html>

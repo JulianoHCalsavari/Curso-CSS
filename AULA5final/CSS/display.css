@@ -2,18 +2,23 @@
 A propriedade display é uma das mais importantes do CSS para controlar nosso layout, ela especifica se ou como um elemento será exibido, cada elemento html do código já tem um valor de exibição/display por padrão de acordo com o elemento que ele é, o tipo de comportamento que ele vai ter*/
 
 /*Vamos analisar os tipos de displays:
+
 display:block => transforma em um bloco, ou seja, ele vai ocupar todo o espaço da linha indo de uma lado a outro, por isso os h1, por exemplo, não ficam um do lado do outro, ficam sempre em baixo, conhecido como bloco.
-display:inline => O elemento não inicia em uma nova linha, nem ocupa toda a extensão da página, mas simplesmente ele ocupa a extensão na mesma linha de acordo com a largura que você precisar, ocupa só o necessário.
-display:block => 
-display:block => 
+
+display:inline => O elemento não inicia em uma nova linha, nem ocupa toda a extensão da página, mas simplesmente ele ocupa a extensão na mesma linha de acordo com a largura que você precisar, ocupa só o necessário, por tanto não consguimos definir um tamanho específico para ele, pois o tamanho dele só vai variar de acordo com o que ele tem dentro.
+
+display:none => O elemento não irá aparecer, mas estará ativo, tudo estará funcionando ele só não vai aparecer, normalmente usado em conjunto com o block, para fazer algo aparecer ou desaparecer em um evento dinâmico.
+
+display:inline-block => Resultado de uma mistura entre os displays inline e block, ele alinha todos os itens um do lado do outro, mas também segue as ordens de altura e largura.
+
 display:block => 
 */
 
 /*Agora analisaremos qual tag vem com qual tipo de display por PADRÃO:
-display:block (tags)=> div, h1, p, form, header, footer e section.
+display:block (tags)=> div, h1, p, form, header, footer, section, ul e li.
 display:inline (tags)=> a, span e img.
-display:block => 
-display:block => 
+display:none => NENHUMA TAG.
+display:inline-block => NENHUMA TAG.
 display:block => 
 */
 
@@ -28,17 +33,63 @@ display:block =>
     background: greenyellow;
 }
 
-.none{
-    
-}
-
 .inlineblock{
-
+    background-color:palegoldenrod;
+    width: 50%;
 }
 
+
+/*Só estética, para deixar mais claras as diferenças*/
+
+.border{
+    border: 2px dotted rgb(216, 23, 23);
+    border-radius: 8px;
+}
+
+.back1{
+    background-color: aqua;
+}
+
+.back2{
+    background-color:coral;
+}
+
+.back3{
+    background-color:rgb(1, 245, 13);
+}
+
+.size{
+    width: 32%;
+    height: 150px;
+}
+
+.size2{
+    width: 25%;
+    height: 90px;
+}
 
 /*Agora aprenderemos como usá-las:*/
 
-usinline{
+.usinline{
     display: inline;
+}
+
+.usnone{
+    display: block;
+}
+.usnone:hover{
+    display: none;
+}
+
+.liinline{
+    display: inline;
+}
+
+.liinlblock{
+    display: inline-block;
+}
+
+/* Se quisermos que um elemento não apareça, mas que o espaço dele também não seja preenchido por outro, podemos usar a propriedade visibility:hidden */
+.visib:hover{
+    visibility: hidden;
 }

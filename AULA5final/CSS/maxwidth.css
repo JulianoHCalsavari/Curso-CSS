@@ -1,0 +1,9 @@
+/* Ao definirmos um width de muitos px, podemos acabar excedendo o tamanho da tela do dispositivo onde o site está sendo executado, principalmente em dispositivos móveis, criando aquela barra de rolagem em baixo, o que nãofica muito legal, então para corrigirmos isso usamos o max-width, com ele podemos deixar o site mais responsivo, pois ele vai adaptando a largura de acordo com o tamanho do dispositivo, da mesma forma o max-height faz para a altura*/
+.ex1{
+    width: 800px;
+}
+
+/* Vale lembrar que ele adapta até o momento em que chegue no vaor máximo, depois disso o valor não é alterado */
+.ex2{
+    max-width: 800px;
+}
